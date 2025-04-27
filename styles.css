@@ -109,8 +109,11 @@ button {
 .mode-button {
     background-color: var(--stripe-light);
     color: var(--stripe-gray);
-    flex: 1;
-    max-width: 120px;
+    flex-basis: 0;
+    flex-grow: 1;
+    width: auto;
+    min-width: 0;
+    max-width: none;
 }
 
 .mode-button.active {
@@ -133,9 +136,11 @@ button {
     }
 
     .mode {
+        display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 0.5rem;
+        width: 100%;
     }
 
     .mode-button {

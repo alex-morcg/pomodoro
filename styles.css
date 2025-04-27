@@ -128,11 +128,22 @@ button {
         font-size: 4rem;
     }
 
-    .controls, .mode {
+    .controls {
         flex-direction: column;
     }
 
-    button {
+    .mode {
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .mode-button {
+        max-width: none;
+        flex: 0 1 120px;
+    }
+
+    .controls button {
         width: 100%;
     }
 } 
